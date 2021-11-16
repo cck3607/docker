@@ -2,13 +2,47 @@
 
 You can use refer to these pages as an installation guide for docker on ubuntu
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+The first step is running apt update
 ```markdown
-Syntax highlighted code block
-
+sudo apt-get update
+```
+Next we want to upgrade 
+```markdown
+sudo apt-get upgrade
+```
+Next step to install docker with the command below
+```markdown
+sudo apt-get install docker.io
+```
+Ensure it is running 
+```markdown
+sudo service docker status
+```
+Start up docker
+```markdown
+sudo service docker start
+```
+check status again to ensure docker is running 
+```markdown
+sudo service docker status
+```
+Next install the container 
+```markdown
+sudo docker run -d -p 443:443 --name openvas mikesplain/openvas
+```
+After that is done installing open a browser and search. You must accept the risk and contiune after search.
+```markdown
+https://localhost
+```
+You should now see Greenbone Security Assistant page(openvas) login with
+```markdown
+username:admin
+password:admin
+```
+Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
+```markdown
+![](doc.jpeg)
+```
 # Header 1
 ## Header 2
 ### Header 3
