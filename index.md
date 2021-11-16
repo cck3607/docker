@@ -41,8 +41,7 @@ password:admin
 ```
 Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
 ```markdown
-![](doc.jpe![doc](https://user-images.githubusercontent.com/60015874/141922218-530c445d-168f-4156-ad48-d17dffe342c6.jpeg)
-g)
+![Image](doc.jpeg)
 ```
 # Header 1
 ## Header 2
