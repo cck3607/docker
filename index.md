@@ -40,14 +40,13 @@ username:admin
 password:admin
 ```
 Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
-```markdown
 ![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
-```
-![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
-# Header 1
-## Header 2
-### Header 3
 
+You should now see Greenbone Security Assistant page(openvas) login with
+```markdown
+username:admin
+password:admin
+```
 - Bulleted
 - List
 
