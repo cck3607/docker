@@ -41,8 +41,9 @@ password:admin
 ```
 Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
 ```markdown
-![doc](https://user-images.githubusercontent.com/60015874/142032248-cc6b4eed-524d-4436-b2f3-01f3b7470b24.jpg)
+![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
 ```
+![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
 # Header 1
 ## Header 2
 ### Header 3
