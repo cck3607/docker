@@ -42,28 +42,34 @@ password:admin
 Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
 ![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
 
-You should now see Greenbone Security Assistant page(openvas) login with
+After the tarfet is created we will now create the task by navigating to the scans tab and clicking on tasks. Then we will create a new task that should look similar to the window below.
+```![FullSizeRender](https://user-images.githubusercontent.com/60015874/142093910-2ef6da1e-0605-448c-aa2d-086b313f168f.jpg)
+```
+Lastly we will create our docker-compose file. To do this we must create the docker-compose file in the terminal.
 ```markdown
-username:admin
-password:admin
+touch docker-compose.yml
 ```
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Now we need to add contents to that file with the following command.
+```markdown
+nano docker-compose.yml
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cck3607/docker/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Now inside the file copy and paste the following below. After pasted you can save and exit with control x
+```markdown
+version: '3.3'
+services:
+    nginx:
+        ports:
+            - '80:80'
+        volumes:
+            - '/var/run/docker.sock:/tmp/docker.sock:ro'
+        restart: always
+        logging:
+            options:
+                max-size: 1g
+        image: nginx
+```
+Now run it with the following command.
+```markdown
+docker run -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --restart always --log-opt max-size=1g nginx
+```
