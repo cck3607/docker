@@ -43,8 +43,8 @@ Once logged in navigate to Configuration tab at top of tool bar and select a tar
 ![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
 
 After the tarfet is created we will now create the task by navigating to the scans tab and clicking on tasks. Then we will create a new task that should look similar to the window below.
-```![FullSizeRender](https://user-images.githubusercontent.com/60015874/142093910-2ef6da1e-0605-448c-aa2d-086b313f168f.jpg)
-```
+![FullSizeRender](https://user-images.githubusercontent.com/60015874/142093910-2ef6da1e-0605-448c-aa2d-086b313f168f.jpg)
+
 Lastly we will create our docker-compose file. To do this we must create the docker-compose file in the terminal.
 ```markdown
 touch docker-compose.yml
