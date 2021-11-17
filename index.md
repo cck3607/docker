@@ -1,6 +1,6 @@
 ## Docker install
 
-You can use refer to these pages as an installation guide for docker on ubuntu
+You can refer to these pages as an installation guide for docker on ubuntu
 
 The first step is running apt update
 ```markdown
@@ -10,7 +10,7 @@ Next we want to upgrade
 ```markdown
 sudo apt-get upgrade
 ```
-Next step to install docker with the command below
+Next step, is to install docker with the command below
 ```markdown
 sudo apt-get install docker.io
 ```
@@ -22,15 +22,15 @@ Start up docker
 ```markdown
 sudo service docker start
 ```
-check status again to ensure docker is running 
+Check status again to ensure docker is running 
 ```markdown
 sudo service docker status
 ```
-Next install the container 
+Next, install the container 
 ```markdown
 sudo docker run -d -p 443:443 --name openvas mikesplain/openvas
 ```
-After that is done installing open a browser and search. You must accept the risk and contiune after search.
+After that is done installing open a browser and input text below. You must accept the risk and contiune after search.
 ```markdown
 https://localhost
 ```
@@ -39,7 +39,7 @@ You should now see Greenbone Security Assistant page(openvas) login with
 username:admin
 password:admin
 ```
-Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look image below.
+Once logged in navigate to Configuration tab at top of tool bar and select a target. Should look similar to image below.
 ![doc](https://user-images.githubusercontent.com/60015874/142032705-a980c631-877f-4307-a0fa-f913db60d56e.jpg)
 
 After the target is created we will now create the task by navigating to the scans tab and clicking on tasks. Then we will create a new task that should look similar to the window below.
